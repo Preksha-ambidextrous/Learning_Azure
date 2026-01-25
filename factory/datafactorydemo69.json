@@ -1,0 +1,9 @@
+{
+	"name": "datafactorydemo69",
+	"location": "austriaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "db0fd4c3-10dc-4f80-be86-1fc29e522224",
+		"tenantId": "7530a48b-2f12-4e43-ba7a-3ba26fa8c5c4"
+	}
+}
