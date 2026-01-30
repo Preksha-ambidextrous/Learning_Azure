@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Global Superstore.xlsx",
+				"fileName": "products-1000.csv",
 				"fileSystem": "democontainer1"
 			},
 			"columnDelimiter": ",",
