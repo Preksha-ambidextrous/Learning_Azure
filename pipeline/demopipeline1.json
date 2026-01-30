@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "Activitydemopipeline1",
-				"description": "I need to copy the data from one container to another. ",
+				"description": "I need to copy the data from one container to another.",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -17,11 +17,14 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "ExcelSource",
+						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
@@ -37,7 +40,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ADLSsourcedLinkedService",
+						"referenceName": "ADLSsourceLinkService1",
 						"type": "DatasetReference"
 					}
 				],
