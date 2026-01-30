@@ -35,8 +35,8 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Activity1",
-						"description": "I need to copy data from one container to another",
+						"name": "Activitydemopipline1",
+						"description": "I need to copy the data from one container to another",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -110,7 +110,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "Global Superstore.xlsx",
+						"fileName": "products-1000.csv",
 						"fileSystem": "democontainer1"
 					},
 					"columnDelimiter": ",",
