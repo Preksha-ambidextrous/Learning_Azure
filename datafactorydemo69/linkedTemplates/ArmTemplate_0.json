@@ -63,7 +63,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/ADLSsourcedLinkedService')]",
+			"name": "[concat(parameters('factoryName'), '/ADLSsourceLinkService1')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -86,7 +86,55 @@
 				},
 				"schema": [
 					{
-						"name": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000��V\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0018\u0000\u0000\u0000xl/drawings/drawing1.xml��]n�0\f\u0007�\u0013�\u000eU�iZ\u0018\u0013C\u0014^�N0\u000e�%n\u001b���\u000e��~�J6i{\u0001\u001em�?���nt��Db\u0013|#�\u0012\u0005z\u0015��]#\u000e�o��(8��`��F\\��n��\u00195�ϼ�\"�{^��\u0011}��ZJV=:�2\f�Ӵ",
+						"name": "Index",
+						"type": "String"
+					},
+					{
+						"name": "Name",
+						"type": "String"
+					},
+					{
+						"name": "Description",
+						"type": "String"
+					},
+					{
+						"name": "Brand",
+						"type": "String"
+					},
+					{
+						"name": "Category",
+						"type": "String"
+					},
+					{
+						"name": "Price",
+						"type": "String"
+					},
+					{
+						"name": "Currency",
+						"type": "String"
+					},
+					{
+						"name": "Stock",
+						"type": "String"
+					},
+					{
+						"name": "EAN",
+						"type": "String"
+					},
+					{
+						"name": "Color",
+						"type": "String"
+					},
+					{
+						"name": "Size",
+						"type": "String"
+					},
+					{
+						"name": "Availability",
+						"type": "String"
+					},
+					{
+						"name": "Internal ID",
 						"type": "String"
 					}
 				]
@@ -112,7 +160,50 @@
 						"fileSystem": "targetcontainer1"
 					}
 				},
-				"schema": {}
+				"schema": {
+					"type": "object",
+					"properties": {
+						"Index": {
+							"type": "string"
+						},
+						"Name": {
+							"type": "string"
+						},
+						"Description": {
+							"type": "string"
+						},
+						"Brand": {
+							"type": "string"
+						},
+						"Category": {
+							"type": "string"
+						},
+						"Price": {
+							"type": "string"
+						},
+						"Currency": {
+							"type": "string"
+						},
+						"Stock": {
+							"type": "string"
+						},
+						"EAN": {
+							"type": "string"
+						},
+						"Color": {
+							"type": "string"
+						},
+						"Size": {
+							"type": "string"
+						},
+						"Availability": {
+							"type": "string"
+						},
+						"Internal ID": {
+							"type": "string"
+						}
+					}
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage2')]"
@@ -125,8 +216,8 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Activitydemopipline1",
-						"description": "I need to copy the data from one container to another",
+						"name": "Activitydemopipeline1",
+						"description": "I need to copy the data from one container to another.",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -162,7 +253,7 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "ADLSsourcedLinkedService",
+								"referenceName": "ADLSsourceLinkService1",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -182,7 +273,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/ADLSsourcedLinkedService')]",
+				"[concat(variables('factoryId'), '/datasets/ADLSsourceLinkService1')]",
 				"[concat(variables('factoryId'), '/datasets/Json1')]"
 			]
 		}
