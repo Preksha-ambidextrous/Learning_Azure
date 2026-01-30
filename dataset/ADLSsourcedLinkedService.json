@@ -1,0 +1,19 @@
+{
+	"name": "ADLSsourcedLinkedService",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "products-1000.csv",
+				"fileSystem": "democontainer1"
+			}
+		},
+		"schema": []
+	}
+}

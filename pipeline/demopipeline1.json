@@ -3,8 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Activitydemopipline1",
-				"description": "I need to copy the data from one container to another",
+				"name": "Activitydemopipeline1",
+				"description": "I need to copy the data from one container to another. ",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -17,14 +17,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
+						"type": "ExcelSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
 							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
