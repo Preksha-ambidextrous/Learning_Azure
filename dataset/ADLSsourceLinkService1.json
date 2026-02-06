@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "leads-1000.csv",
-				"fileSystem": "democontainer1"
+				"fileName": "leads-1000.json",
+				"fileSystem": "targetcontainer1"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
