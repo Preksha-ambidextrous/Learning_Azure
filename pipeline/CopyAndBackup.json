@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "CopyAndBackup",
 	"properties": {
 		"activities": [
 			{
@@ -39,13 +39,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ADLSsourceLinkService1",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "Json1",
+						"referenceName": "Json2",
 						"type": "DatasetReference"
 					}
 				]

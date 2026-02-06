@@ -1,8 +1,8 @@
 {
-	"name": "Binary1",
+	"name": "DelimitedText2",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureDataLakeStorage2",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -24,51 +24,55 @@
 				"type": "String"
 			},
 			{
-				"name": "Name",
+				"name": "Account Id",
 				"type": "String"
 			},
 			{
-				"name": "Description",
+				"name": "Lead Owner",
 				"type": "String"
 			},
 			{
-				"name": "Brand",
+				"name": "First Name",
 				"type": "String"
 			},
 			{
-				"name": "Category",
+				"name": "Last Name",
 				"type": "String"
 			},
 			{
-				"name": "Price",
+				"name": "Company",
 				"type": "String"
 			},
 			{
-				"name": "Currency",
+				"name": "Phone 1",
 				"type": "String"
 			},
 			{
-				"name": "Stock",
+				"name": "Phone 2",
 				"type": "String"
 			},
 			{
-				"name": "EAN",
+				"name": "Email 1",
 				"type": "String"
 			},
 			{
-				"name": "Color",
+				"name": "Email 2",
 				"type": "String"
 			},
 			{
-				"name": "Size",
+				"name": "Website",
 				"type": "String"
 			},
 			{
-				"name": "Availability",
+				"name": "Source",
 				"type": "String"
 			},
 			{
-				"name": "Internal ID",
+				"name": "Deal Stage",
+				"type": "String"
+			},
+			{
+				"name": "Notes",
 				"type": "String"
 			}
 		]
