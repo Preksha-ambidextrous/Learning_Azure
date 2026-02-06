@@ -1,5 +1,5 @@
 {
-	"name": "ADLSsourceLinkService1",
+	"name": "DelimitedText1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
