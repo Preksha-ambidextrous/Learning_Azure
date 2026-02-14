@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText3",
+	"name": "DelimitedText6",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -10,8 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "leads-1000.csv",
-				"fileSystem": "democontainer1"
+				"fileSystem": "targetcontainer1"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
@@ -24,51 +23,55 @@
 				"type": "String"
 			},
 			{
-				"name": "Name",
+				"name": "Account Id",
 				"type": "String"
 			},
 			{
-				"name": "Description",
+				"name": "Lead Owner",
 				"type": "String"
 			},
 			{
-				"name": "Brand",
+				"name": "First Name",
 				"type": "String"
 			},
 			{
-				"name": "Category",
+				"name": "Last Name",
 				"type": "String"
 			},
 			{
-				"name": "Price",
+				"name": "Company",
 				"type": "String"
 			},
 			{
-				"name": "Currency",
+				"name": "Phone 1",
 				"type": "String"
 			},
 			{
-				"name": "Stock",
+				"name": "Phone 2",
 				"type": "String"
 			},
 			{
-				"name": "EAN",
+				"name": "Email 1",
 				"type": "String"
 			},
 			{
-				"name": "Color",
+				"name": "Email 2",
 				"type": "String"
 			},
 			{
-				"name": "Size",
+				"name": "Website",
 				"type": "String"
 			},
 			{
-				"name": "Availability",
+				"name": "Source",
 				"type": "String"
 			},
 			{
-				"name": "Internal ID",
+				"name": "Deal Stage",
+				"type": "String"
+			},
+			{
+				"name": "Notes",
 				"type": "String"
 			}
 		]
